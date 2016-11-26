@@ -1,0 +1,102 @@
+# Site settings
+title: Underwindfall
+SEOTitle: 起帆的博客 | Undervoid Blog
+header-img: "img/home-bg.jpg"
+email: yangqifan02@gmail.com
+description: "学生 程序员 喜欢尝试 | 这里是 @Undervoid 的个人博客，与你一起发现更大的世界。"
+keyword: "Underwindfall, Undervoid, Undervoid Blog, 博客, 个人网站"
+url: "https://qifanyang.com"        # your host, for absolute URL
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+
+
+
+# SNS settings
+RSS: true
+zhihu_username:     undervoidfall
+github_username:    underwindfall
+linkedin_username:  qifan-yang
+
+
+# Build settings
+highlighter: rouge
+permalink: pretty
+paginate: 10       # 一页你准备放几篇文章
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+timezone: Asia/Shanghai
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+  syntax_highlighter: rouge
+
+# Defaults for posts
+# defaults:
+#   -
+#     scope: 
+#       path: ""
+#       type: "posts"
+#     values:
+#       layout: "post"
+#       author: "Undervoid"
+#       header-img: "/img/lantern.jpg" # We don't want posts without a header image, that whould mean white on white
+
+# Disqus settings
+disqus_username: underwind
+
+# Duoshuo settings 暂时不使用duoshuo评论功能
+# Duoshuo settings
+#duoshuo_username: 
+# Share component is depend on Comment so we can NOT use share only.
+#duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+
+
+# Analytics settings
+# Baidu Analytics
+#ba_track_id:**
+
+# Google Analytics
+ga_track_id: 'UA-88009837-1'            # Format: UA-xxxxxx-xx
+ga_domain: auto
+
+
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "看看世界，敲敲代码，学学设计，随意捣鼓。热爱生活，享受现在。"
+sidebar-avatar: "/img/avatar-person.jpg"     # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
+# Friends
+friends: [
+    {
+        title: "读立写生",
+        href: "http://cnfeat.com/"
+    },
+    {
+        title: "Hux Blog",
+        href: "http://huangxuan.me"
+    },
+]

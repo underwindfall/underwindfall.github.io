@@ -1,0 +1,19 @@
+# Jekyll 
+
+_site/
+.sass-cache/
+.jekyll-metadata
+node_modules
+npm-debug.log
+*.sh
+
+# Mac OS
+
+.DS_Store
+*/.DS_Store
+*/*/.DS_Store
+
+# Sublime text
+
+*.sublime-project
+*.sublime-workspace

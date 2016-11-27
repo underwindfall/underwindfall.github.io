@@ -1,89 +1,17 @@
----
-layout:     post
-title:      "Hello 2016!"
-subtitle:   " \"Hello World Hello Blog\""
-date:       2016-11-26 12:00:00
-author:     "Undervoid"
-header-img: "img/post-time.jpg"
-tags:
-    - 磨砻淬砺集
-    - 网页前端
----
-
-
-# Hello Blog
-
 >"Carpe diem, Quam minimum credula postero"
 
-##写在前面的话
-萌生出去写Blog这样的想法是因为之前看了很多大牛的博客，自己心神向往，于是入坑。希望能够借助此博客，锻炼自己常常写作的能力和习惯。无论多忙，也能够与自己，与他人分享一些东西。希望这个博客不单单作为一个技术博客，也能执着于追求和思考。
+# 关于Blog
 
-[技术具体实现方法](#build)
+### 说明
+欢迎大家来Clone这个网站来构建自己的简历，本页面灵感来源于[Huxpro](https://github.com/Huxpro/huxpro.github.io),感谢。
 
-<p id="build"></p>
+##读书学习生活
 ---
-##细节实现
-这个博客主要是基于[Github Pages](https://pages.github.com/) + [Jekyll](http://jekyllrb.com/)+[Bootstrap](http://www.bootcss.com/)来进行搭建。用这种方式搭建博客有利有弊，好处是你可以完全托管给Github，坏处就是他生成的是静态网页，添加评论必须使用外部服务，比如评论功能就只能用Disqus或者Duoshuo。后者很多功能已经无法正确实现，这里推荐Disqus。
-### 背景知识
-- Git 是一个分布式版本控制/软件配置管理软件，想要开发这个Blog的童鞋懂得基本的Git的知识就行。
-- Github Pages 是面向用户、组织和项目开放的公共静态页面搭建托管服 务，站点可以被免费托管在 Github 上，你可以选择使用 Github Pages 默 认提供的域名 github.io 或者自定义域名来发布站点。
-- Jekyll 是基于 Ruby 的 package，用于编译生成静态站点。GitHub 提供了静态站点支持，并采用 Jekyll 作为其编译引擎。于是，在 GitHub 提交文件后，在10分钟内 GitHub 将编译生成静态站点并开始提供服务。
-- Bootstrap 是一个用于快速开发 Web 应用程序和网站的前端框架。Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的。
-### 环境配置
-- Github账号
-- [Ruby 安装](http://rubyinstaller.org/downloads/),选择适合的版本下载。记得安装时选择"Add Ruby executables to your PATH",虽然之后也可以添加，但为了避免新手出错的蛋疼还是选下吧。
-- [DevKit 安装](http://rubyinstaller.org/downloads/),选择跟Ruby相适应的版本下载。之后初始化创建 config.yml文件。在命令行进入你刚刚解压的DevKitl路径输入：<br/>
-```
-ruby dk.rb init
-notepad config.yml(这步取决你有没有这款编译器，没得话也不要紧，记事本打开也行)
-```
-接下来两步非必要操纵是为了审查：<br/>
+我是杨奇凡，博客：[qifanyang.com](http://qifanyang.com)
+希望能够在开发学习过程中写下自己的感悟。同时也能够记录对生活的方方面面的感受。
+目前即将从事**Android开发工作**
 
-```
-ruby dk.rb review
-ruby dk.rb install
-```
-- Jekyll 安装 <br/>
-
-```
-gem install jekyll
-```
-### 建立站点
--  创建Github仓库
-我推荐去看这篇[博客](http://www.jianshu.com/p/05289a4bc8b2#)，内容详尽而充实。这里就不一一赘述了。
--   将Jkelly部署到Github Pages上，这个过程Jekyll有详尽教程。附上[链接](http://jekyllcn.com/docs/github-pages/)
--   大的Jkelly[主题](http://jekyllthemes.org/)有很多，可以根据喜好选择fork。我最初fork是这个CLean Blog
-    ![](https://github.com/underwindfall/underwindfall.github.io/blob/master/img/screenshot.png)
-图片来源：[@gilsondev](https://github.com/gilsondev/pelican-clean-blog)
--   生成站点文件
-    *   生成之前建议可以先配置一下gitignore文件避免忘记，这里推荐个[神器 gitignore.io](https://www.gitignore.io/)
-    *   然后把命令行调至目前网站的文件夹中输入<br/>
-        ```
-        jekyll server
-        ```
-如果之前都配置的没有问题的话，就能看到<br/>
-
-```
-Configuration file: /Users/baixinpan/Desktop/OpenSource/Mine/Page-Blog/undervoidfall.github.io-github/_config.yml
-            Source: /Users/baixinpan/Desktop/OpenSource/Mine/Page-Blog/undervoidfall.github.io-github
-       Destination: /Users/baixinpan/Desktop/OpenSource/Mine/Page-Blog/undervoidfall.github.io-github/_site
- Incremental build: disabled. Enable with --incremental
-      Generating... 
-                    done in 0.901 seconds.
- Auto-regeneration: enabled for '/Users/baixinpan/Desktop/OpenSource/Mine/Page-Blog/undervoidfall.github.io-github'
-Configuration file: /Users/baixinpan/Desktop/OpenSource/Mine/Page-Blog/undervoidfall.github.io-github/_config.yml
-    Server address: http://127.0.0.1:4000/
-  Server running... press ctrl-c to stop.
-```
-表示本地服务部署成功。
-
-在浏览器输入 [127.0.0.1:4000](http://127.0.0.1:4000/),就可以看到博客效果了。
-### 个性化设置
-*   如果你想使用我的模板请把 _posts/ 目录下的文章都去掉。
-*   修改 _config.yml 文件里面的内容为你自己的。
-然后使用 git push 到你自己的仓库里面去，检查你远端仓库，在浏览器输入 username.github.io 就会发现，你有一个漂亮的主题模板了。
-
-## 开发时间线
+### ChangeLOG
 - 2016-11-20
     * 站点框架
     * github 部署
@@ -119,21 +47,37 @@ Configuration file: /Users/baixinpan/Desktop/OpenSource/Mine/Page-Blog/undervoid
 - 2016-11-27
     * 个性化about 页面
     * 正式发布到站点
+    
+### TodoList
+-  [x]  添加评论功能
+-  [x] 修改英文界面
+-  [x] 完成对大博客的书写修改
+-  [x] 404页面 腾讯公益项目
+-  [x] 个性化about 页面
 
-## 特别鸣谢：
+## License
+The MIT License (MIT)
 
-* [黄玄](http://huangxuan.me)：最终 fork 他的啦，改了一些，作品好赞！
+Copyright (c) 2016 underwindfall
 
-* [azeril](http://azeril.me)：最开始是看的他的博客学习搭建的，第一版也是 fork 他的。
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-* [cnfeat](http://cnfeat.com)：他是 fork👆的啦，配置的介绍也帮到我不少，每天一千字真的好厉害啊。
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-还有各种 tools and services：  
-    *Jekyll，Github，Git，Google，Clean Blog Theme，Disqus，Markdown……*  
-不一个个贴链接了。
-
-至于成功与否，当然每个人尝试都会遇到一些不一样的问题，欢迎交流。
 
 
 

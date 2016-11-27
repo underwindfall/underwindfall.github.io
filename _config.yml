@@ -62,7 +62,7 @@ disqus_username: underwind
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id:c3cb637cf232b4ed612b868297781c8e
+ba_track_id:'c3cb637cf232b4ed612b868297781c8e'
 
 # Google Analytics
 ga_track_id: 'UA-88009837-1'            # Format: UA-xxxxxx-xx

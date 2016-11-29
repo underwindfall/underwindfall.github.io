@@ -8,7 +8,7 @@ header-img:  "img/touring.jpg"
 <div id="contact">
   <h1 class="pageTitle">Contact Me</h1>
   <div class="contactContent">
-    <p>如果你有更多的疑问或者想要联系我的话 <a href="mailto:yangqifan02@gmail.com">发邮件给我</a> 或者是用<a href="https://github.com/underwindfall/underwindfall.github.io">Github issue</a></p>
+    <p>如果你有更多的疑问或者想要联系我的话 <a href="mailto:yangqifan02@gmail.com" style="color: #f5f5f5;background: #dd1144">发邮件给我</a> 或者是用<a href="https://github.com/underwindfall/underwindfall.github.io" style="color: #f5f5f5;background: #dd1144"> Github issue</a></p>
     <p>If you have questions about the theme feel free to <a href="mailto:yangqifan02@gmail.com">email me</a> or create an issue on <a href="https://github.com/underwindfall/underwindfall.github.io">GitHub</a>. Enjoy!</p>
   </div>
   <form action="http://formspree.io/yangqifan02@gmail.com" method="POST">

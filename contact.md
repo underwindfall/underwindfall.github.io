@@ -1,13 +1,14 @@
 ---
 layout: about
 title: "Contact"
-description: "嘿，你總算找到我啦"
+description: "嗨，联系我吧"
 header-img:  "img/touring.jpg"
 ---
 <link rel="stylesheet" href="{{ "/css/undervoidfall-blog.min.css" | prepend: site.baseurl }}">
 <div id="contact">
   <h1 class="pageTitle">Contact Me</h1>
   <div class="contactContent">
+    <p>如果你有更多的疑问或者想要联系我的话 <a href="mailto:yangqifan02@gmail.com">发邮件给我</a> 或者是用<a href="https://github.com/underwindfall/underwindfall.github.io">Github issue</a></p>
     <p>If you have questions about the theme feel free to <a href="mailto:yangqifan02@gmail.com">email me</a> or create an issue on <a href="https://github.com/underwindfall/underwindfall.github.io">GitHub</a>. Enjoy!</p>
   </div>
   <form action="http://formspree.io/yangqifan02@gmail.com" method="POST">

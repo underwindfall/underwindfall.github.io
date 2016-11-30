@@ -1,0 +1,12 @@
+---
+layout:     post
+title:      "Android与Expandable,SwipeListview混合使用"
+subtitle:   " \"Expandable的使用方式和自定义模型\""
+date:       2016-11-30 12:00:00
+author:     "Undervoid"
+header-img: "img/post-bg-android.jpg"
+catalog: true
+tags:
+    - 磨砻淬砺集
+    - Android开发
+---

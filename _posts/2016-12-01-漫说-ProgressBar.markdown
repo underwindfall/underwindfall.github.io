@@ -2,7 +2,7 @@
 layout:     post
 title:      "漫说ProgressBar之基础篇"
 subtitle:   " \"ProgressBar详解以及自定义(一)\""
-date:       2016-11-26 12:00:00
+date:       2016-12-01 12:00:00
 author:     "Undervoid"
 header-img: "img/post-time.jpg"
 catalog: true

@@ -10,3 +10,8 @@ tags:
     - 磨砻淬砺集
     - Android开发
 ---
+
+# Android与Expandable,SwipeListview混合使用
+
+>这篇文章主要在于分享ExpandableList的基本用法和
+

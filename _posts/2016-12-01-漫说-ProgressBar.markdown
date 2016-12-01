@@ -4,7 +4,7 @@ title:      "漫说ProgressBar之基础篇"
 subtitle:   " \"ProgressBar详解以及自定义(一)\""
 date:       2016-12-01 12:00:00
 author:     "Undervoid"
-header-img: "img/post-time.jpg"
+header-img: "img/post-bg-android.jpg"
 catalog: true
 tags:
     - 磨砻淬砺集

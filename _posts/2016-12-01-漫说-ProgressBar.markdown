@@ -55,7 +55,9 @@ tags:
      android:layout_height="wrap_content"  
      android:secondaryProgress="70" />  
 ```
+
 这时候整个ProgressBar已经被系统的默认样式设置。
+
 ```
 <style name="Widget.ProgressBar.Horizontal">  
     <item name="android:indeterminateOnly">false</item>  
@@ -66,7 +68,9 @@ tags:
     <item name="android:mirrorForRtl">true</item>  
 </style>  
 ```
+
 在相对应的Fragment或者Activity中，声明调用就可。就想其他控件一样。
+
 ```JAVA
 //JAVA
 public class MainActivity extends Activity implements OnClickListener {
@@ -83,6 +87,7 @@ public class MainActivity extends Activity implements OnClickListener {
         }
 }
 ```
+
 下面说下ProgressBar的方法.总体来说，可以分为两个部分。一是和自身属性相关的，比如获取进度、设置进度的最大值、设置插入器等等。二是和绘制相关的部分，如图所示：
 ![](https://s3.eu-central-1.amazonaws.com/undervoidfall/Android+Notes/Progressbar/ProgresBar_method.jpg)
 
@@ -91,6 +96,7 @@ public class MainActivity extends Activity implements OnClickListener {
 这次自己选择了使用创建新的MyProgressBar类继承ProgressBar. 话不多说直接上代码。 在这次自定义的过程中主要学会了，用Canvas来画圆弧赛贝尔曲线。
 完成图：
 ![](https://s3.eu-central-1.amazonaws.com/undervoidfall/Android+Notes/Progressbar/Progressbar_finish.jpg)
+
 ```XML
 //XML
 <com.custome.MyProgressBarHorizontal

@@ -46,7 +46,8 @@ tags:
 
 >目前只介绍水平进度条使用，其他的类型也类似可以模仿使用。
 
-```XML
+
+```xml
 //XML
 <ProgressBar  
      android:id="@+id/progressbar"  
@@ -58,7 +59,7 @@ tags:
 
 这时候整个ProgressBar已经被系统的默认样式设置。
 
-```
+```xml
 <style name="Widget.ProgressBar.Horizontal">  
     <item name="android:indeterminateOnly">false</item>  
     <item name="android:progressDrawable">@android:drawable/progress_horizontal</item>  
@@ -67,11 +68,12 @@ tags:
     <item name="android:maxHeight">20dip</item>  
     <item name="android:mirrorForRtl">true</item>  
 </style>  
+
 ```
 
 在相对应的Fragment或者Activity中，声明调用就可。就想其他控件一样。
 
-```JAVA
+```java
 //JAVA
 public class MainActivity extends Activity implements OnClickListener {
     private ProgressBar progressBar;
@@ -97,7 +99,7 @@ public class MainActivity extends Activity implements OnClickListener {
 完成图：
 ![](https://s3.eu-central-1.amazonaws.com/undervoidfall/Android+Notes/Progressbar/Progressbar_finish.jpg)
 
-```XML
+```xml
 //XML
 <com.custome.MyProgressBarHorizontal
             android:id="@+id/event_progress_bar"
@@ -117,7 +119,7 @@ public class MainActivity extends Activity implements OnClickListener {
             pb:unReachHeight="8dp"/>
 ```
 
-```Android
+```java
 //JAVA
 public class MyProgressBarHorizontal extends ProgressBar {
 

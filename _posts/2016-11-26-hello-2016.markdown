@@ -45,21 +45,21 @@ tags:
 - [Ruby 安装](http://rubyinstaller.org/downloads/),选择适合的版本下载。记得安装时选择"Add Ruby executables to your PATH",虽然之后也可以添加，但为了避免新手出错的蛋疼还是选下吧。
 - [DevKit 安装](http://rubyinstaller.org/downloads/),选择跟Ruby相适应的版本下载。之后初始化创建 config.yml文件。在命令行进入你刚刚解压的DevKitl路径输入：
 
-```bash
+```cmd
 ruby dk.rb init
 notepad config.yml(这步取决你有没有这款编译器，没得话也不要紧，记事本打开也行)
 ```
 
 接下来两步非必要操纵是为了审查：
 
-```bash
+```cmd
 ruby dk.rb review
 ruby dk.rb install
 ```
 
 - Jekyll 安装
 
-```bash
+```cmd
 gem install jekyll
 ```
 
@@ -75,13 +75,13 @@ gem install jekyll
     *   生成之前建议可以先配置一下gitignore文件避免忘记，这里推荐个[神器 gitignore.io](https://www.gitignore.io/)
     *   然后把命令行调至目前网站的文件夹中输入
 
-        ```bash
+        ```cmd
         jekyll server
         ```
 
 如果之前都配置的没有问题的话，就能看到 
 
-```bash
+```cmd
 Configuration file: /Users/baixinpan/Desktop/OpenSource/Mine/Page-Blog/undervoidfall.github.io-github/_config.yml
             Source: /Users/baixinpan/Desktop/OpenSource/Mine/Page-Blog/undervoidfall.github.io-github
        Destination: /Users/baixinpan/Desktop/OpenSource/Mine/Page-Blog/undervoidfall.github.io-github/_site
@@ -122,7 +122,7 @@ Configuration file: /Users/baixinpan/Desktop/OpenSource/Mine/Page-Blog/undervoid
 -   2016-11-23
     * 解决测试日记不能使用问题 阅读文档后发现Jekyll 要求一篇文章的文件名遵循下面的格式：
 
-         ```bash
+         ```cmd
             年-月-日-标题.MARKUP
             2011-12-31-new-years-eve-is-awesome.md
             2012-09-12-how-to-write-a-blog.textile

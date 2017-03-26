@@ -105,12 +105,7 @@ Middleware 是一个插件，他被应用于 Action 被唤醒去 dispatch.store(
 
 ## 参考
 
-[Understanding Redux Middleware]: https://medium.com/@meagle/understanding-87566abcfb7a#.r7x2ierw5	"Understanding Redux Middleware"
 [How Redux works]: http://arqex.com/1087/using-redux-devtools-without-redux	"How Redux works"
-
 [Redux Middleware: Behind the Scene](http://briantroncone.com/?p=529)
-
 [Understanding Redux Middleware](https://medium.com/@meagle/understanding-87566abcfb7a#.r7x2ierw5)
-
-[How Redux works](http://arqex.com/1087/using-redux-devtools-without-redux)
 

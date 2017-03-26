@@ -2,7 +2,7 @@
 layout:     post
 title:      "Redux Android初体验"
 subtitle:   " \"Unidirectional data flow in Android App\""
-date:       2017-03-24 12:00:00
+date:       2017-03-25 12:00:00
 author:     "Undervoid"
 header-img: "img/post-bg-android.jpg"
 catalog: true

@@ -1,10 +1,10 @@
 ---
 layout:     post
-title:      "Redux Android初体验"
+title:      "Redux Android 初体验"
 subtitle:   " \"Unidirectional data flow in Android App\""
 date:       2017-03-25 12:00:00
 author:     "Undervoid"
-header-img: "img/post-bg-android.jpg"
+header-img: "img/post-bg-android-redux.jpg"
 catalog: true
 tags:
     - 磨砻淬砺集
@@ -91,7 +91,7 @@ Middleware 是一个插件，他被应用于 Action 被唤醒去 dispatch.store(
 
 ## Android Redux Code Demo
 
-自己尝试用 [Kotlin](!https://kotlinlang.org/) 和 [redux-Kotlin](!https://github.com/pardom/redux-kotlin)搭建了一个简单的关于Redux在Android的应用，它能够通过输入 Github 用户名获取其相关的仓库。算是给大家一个小常识吧。
+自己尝试用 [Kotlin](!https://kotlinlang.org/) 和 [redux-Kotlin](!https://github.com/pardom/redux-kotlin)搭建了一个简单的关于Redux在Android的应用，它能够模拟面试我也加入了 Realm 开源库 。算是给大家一个小尝试吧。
 
 [Demo地址](!https://github.com/underwindfall/kotlin_redux_interview)
 

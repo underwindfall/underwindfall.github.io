@@ -95,6 +95,14 @@ Middleware 是一个插件，他被应用于 Action 被唤醒去 dispatch.store(
 
 [Demo地址](!https://github.com/underwindfall/kotlin_redux_interview)
 
+* Demo 截图：
+
+  ![](https://s3.eu-central-1.amazonaws.com/undervoidfall/blog/demo2.png)()
+
+  ​
+
+
+
 ## 参考
 
 [Redux Middleware: Behind the Scene]: http://briantroncone.com/?p=529

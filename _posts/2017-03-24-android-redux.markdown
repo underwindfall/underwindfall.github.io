@@ -1,17 +1,16 @@
 ---
 layout:     post
-title:      "Redux"
+title:      "Redux Android初体验"
 subtitle:   " \"Unidirectional data flow in Android App\""
 date:       2017-03-24 12:00:00
 author:     "Undervoid"
-header-img: "img/post-bg-android-redux.jpg"
+header-img: "img/post-bg-android.jpg"
 catalog: true
 tags:
     - 磨砻淬砺集
+    - Android开发
     - Redux
-    - Android基础
 ---
-
 
 # Redux 初探
 

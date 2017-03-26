@@ -97,7 +97,7 @@ Middleware 是一个插件，他被应用于 Action 被唤醒去 dispatch.store(
 
 * Demo 截图：
 
-  ![](https://s3.eu-central-1.amazonaws.com/undervoidfall/blog/demo2.png)()
+  ![](https://s3.eu-central-1.amazonaws.com/undervoidfall/blog/demo2.png)
 
   ​
 

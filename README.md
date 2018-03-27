@@ -5,7 +5,7 @@
 ### 说明
 欢迎大家来Clone这个网站来构建自己的简历，本页面灵感来源于[Huxpro](https://github.com/Huxpro/huxpro.github.io),感谢。
 
-##读书学习生活
+## 读书学习生活
 ---
 我是杨奇凡，博客：[qifanyang.com](http://qifanyang.com)
 希望能够在开发学习过程中写下自己的感悟。同时也能够记录对生活的方方面面的感受。

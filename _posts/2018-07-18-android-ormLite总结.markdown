@@ -375,57 +375,10 @@ updateBuilder.update();
     public PackageInfo mPackage;
 ```
 
-> **Redux in Android Architecture :**
-
-![](https://s3.eu-central-1.amazonaws.com/undervoidfall/blog/redux_android.jpg)
-
-通过上图我们可以发现，在「Redux-Android」应用中，用户通过 UI 操作来触发 Action 的方法， 由它来进行判断和执行出发 Reducer操作更新 Appstate。 Appstore 更像是一辆载满了 Appstate 的公交车，Android端来通过 Appstate.getStore() 的方式获取最新的应用状态从而达到更新界面的效果。
-
-## Redux Data Lifecycle
-
-**严格的单向数据流**是 Redux 架构的设计核心。
-
-这意味着应用中所有的数据都遵循相同的生命周期，这样可以让应用变得更加可预测且容易理解。同时也鼓励做数据范式化，这样可以避免使用多个且独立的无法相互引用的重复数据。
-
-![](https://s3.eu-central-1.amazonaws.com/undervoidfall/blog/redux_data_lifecycle_simple.png)
 
 
 
 
 
-## Redux Android 中间件 (Middleware) 
 
-> It provides a third-party extension point between dispatching an action, and the moment it reaches the reducer.
-
-Middleware 是一个插件，他被应用于 Action 被唤醒去 dispatch.store() 和 store即将使用 reducer 使用。本质的目的是提供第三方插件的模式，自定义拦截 **action -> reducer ** 的过程。变为 **action -> middlewares -> reducer** 。这种机制可以让我们改变数据流，实现如异步 action ，action 过滤，日志输出，异常报告等功能。
-
-![](https://s3.eu-central-1.amazonaws.com/undervoidfall/blog/redux-middleware.png)
-
- 
-
-也就是说现在的 **Redux 数据流声明周期**变成了
-
-![](https://s3.eu-central-1.amazonaws.com/undervoidfall/blog/redux_data_lifecycle_complex.png)
-
-
-
-## Android Redux Code Demo
-
-自己尝试用 [Kotlin](!https://kotlinlang.org/) 和 [redux-Kotlin](!https://github.com/pardom/redux-kotlin)搭建了一个简单的关于Redux在Android的应用，它能够模拟面试我也加入了 Realm 开源库 。算是给大家一个小尝试吧。
-
-[Demo地址](!https://github.com/underwindfall/kotlin_redux_interview)
-
-* Demo 截图：
-
-  ![](https://s3.eu-central-1.amazonaws.com/undervoidfall/blog/demo2.png)
-
-  ​
-
-
-
-## 参考
-
-[How Redux works]: http://arqex.com/1087/using-redux-devtools-without-redux	"How Redux works"
-[Redux Middleware: Behind the Scene](http://briantroncone.com/?p=529)
-[Understanding Redux Middleware](https://medium.com/@meagle/understanding-87566abcfb7a#.r7x2ierw5)
 

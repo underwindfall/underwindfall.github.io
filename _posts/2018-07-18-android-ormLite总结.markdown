@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "android-ormLite总结"
-subtitle:   " \"基础用法\""
+title:      "android ormLite总结"
+subtitle:   " \"基础知识\""
 date:       2018-07-18 12:00:00
 author:     "Undervoid"
 header-img: "img/post-bg-android.jpg"

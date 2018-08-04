@@ -4,7 +4,7 @@ title:      "ReactNative 工作总结"
 subtitle:   " \"基础知识\""
 date:       2018-07-28 12:00:00
 author:     "Undervoid"
-header-img: "img/post-bg-react-native.png"
+header-img: "img/pg-react-native.png"
 catalog: true
 tags:
     - 磨砻淬砺集

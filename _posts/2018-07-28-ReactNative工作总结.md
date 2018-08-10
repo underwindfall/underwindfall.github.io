@@ -58,7 +58,7 @@ function EnhanceWrapper(WrappedComponent) {
 }
  ```
  
- ### Function as Child Components
+### Function as Child Components
  
  ```javascript
  class StudentWithAge extends React.Component {
@@ -276,6 +276,7 @@ eventChannel => factory 連結外部的事件為 Redux Store 以外的事件來�
 
 
 ### Redux-Connect
+
 #### Redux -- Connect
 React 和 redux 本身
 对于某些人来说，也许很难相信 redux 和 react 实际上是两个独立的库这件事情，它们完全可以独立使用。

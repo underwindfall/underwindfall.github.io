@@ -57,7 +57,9 @@ function EnhanceWrapper(WrappedComponent) {
     }
 }
  ```
+ 
  ### Function as Child Components
+ 
  ```javascript
  class StudentWithAge extends React.Component {
     componentWillMount() {
@@ -74,8 +76,11 @@ function EnhanceWrapper(WrappedComponent) {
         );
     }
 }
+
 ```
+
 使用的时候可以这样：
+
 ```javascript
 <StudentWithAge>
     {
@@ -90,6 +95,7 @@ function EnhanceWrapper(WrappedComponent) {
 </StudentWithAge>
 
 ```
+
 * 比起高阶组件，这种方式有一些优势：
    * 1、代码结构上少掉了一层（返回高阶组件的）函数封装。
    * 2、调试时组件结构更加清晰；

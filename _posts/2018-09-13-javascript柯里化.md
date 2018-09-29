@@ -75,6 +75,95 @@ console.log(fn + 10);
 
 因此上面例子的结论就很容易理解了。建议大家动手尝试一下。
 
+
+## Javascript call && apply函数
+两者的函数作用其实基本一模一样，只是传参的形式有区别而已。 感觉都是用来感觉context的作用
+> apply()
+apply 方法传入两个参数：一个是作为函数上下文的对象，另外一个是作为函数参数所组成的数组
+
+```javascript
+var obj = {
+    name : 'linxin'
+}
+
+function func(firstName, lastName){
+    console.log(firstName + ' ' + this.name + ' ' + lastName);
+}
+
+func.apply(obj, ['A', 'B']);    // A linxin B
+```
+可以看到，obj 是作为函数上下文的对象，函数 func 中 this 指向了 obj 这个对象。参数 A 和 B 是放在数组中传入 func 函数，分别对应 func 参数的列表元素
+
+> call()
+call 方法第一个参数也是作为函数上下文的对象，但是后面传入的是一个参数列表，而不是单个数组。
+
+```javascript
+var obj = {
+    name: 'linxin'
+}
+
+function func(firstName, lastName) {
+    console.log(firstName + ' ' + this.name + ' ' + lastName);
+}
+
+func.call(obj, 'C', 'D');       // C linxin D
+```
+对比 apply 我们可以看到区别，C 和 D 是作为单独的参数传给 func 函数，而不是放到数组中。
+
+对于什么时候该用什么方法，其实不用纠结。如果你的参数本来就存在一个数组中，那自然就用 apply，如果参数比较散乱相互之间没什么关联，就用 call。
+
+### apply 和 call 的用法
+- 改变 this 指向
+
+```javascript
+var obj = {
+    name: 'linxin'
+}
+
+function func() {
+    console.log(this.name);
+}
+
+func.call(obj);       // linxin
+```
+我们知道，call 方法的第一个参数是作为函数上下文的对象，这里把 obj 作为参数传给了 func，此时函数里的 this 便指向了 obj 对象。此处 func 函数里其实相当于
+
+```javascript
+
+function func() {
+    console.log(obj.name);
+}
+```
+
+
+- 借用别的对象的方法
+
+```javascript
+var Person1  = function () {
+    this.name = 'linxin';
+}
+var Person2 = function () {
+    this.getname = function () {
+        console.log(this.name);
+    }
+    Person1.call(this);
+}
+var person = new Person2();
+person.getname();       // linxin
+```
+
+从上面我们看到，Person2 实例化出来的对象 person 通过 getname 方法拿到了 Person1 中的 name。因为在 Person2 中，Person1.call(this) 的作用就是使用 Person1 对象代替 this 对象，那么 Person2 就有了 Person1 中的所有属性和方法了，相当于 Person2 继承了 Person1 的属性和方法。
+
+- 调用函数
+`apply`、`call` 方法都会使函数立即执行，因此它们也可以用来调用函数。
+
+```javascript
+function func() {
+    console.log('linxin');
+}
+func.call();            // linxin
+```
+
 ## Javascript Curry 介绍
 
 ## 实例
@@ -92,6 +181,41 @@ addTen(2);
 ```
 我们定义了一个 `add` 函数，它接受一个参数并返回一个新的函数。调用 add 之后，返回的函数就通过闭包的方式记住了 `add` 的第一个参数。一次性地调用它实在是有点繁琐，好在我们可以使用一个特殊的 `curry` 帮助函数（`helper function`）使这类函数的定义和调用更加容易。掌握好了`curry`其实就是掌握了高阶函数
 
+之前听老大也讲了一道面试题, 写一个 `add`函数使其能够满足这个需求
+
+```javascript
+add(1)(2)(3) = 6
+add(1, 2, 3)(4) = 10
+add(1)(2)(3)(4)(5) = 15
+
+```
+
+>`curry`(柯里化)为部分求值，是把接受多个参数的函数变换成接受一个单一参数（最初函数的第一个参数）的函数，并且返回一个新的函数的技术，新函数接受余下参数并返回运算结果。
 
 
+```javascript
+//答案
 
+const add=()=> {
+    // 第一次执行时，定义一个数组专门用来存储所有的参数
+    const _args = [].slice.call(arguments);
+
+    // 在内部声明一个函数，利用闭包的特性保存_args并收集所有的参数值
+    const adder =  () =>{
+        const _adder = ()=> {
+            [].push.apply(null, [].slice.call(arguments));
+            return _adder;
+        };
+
+        // 利用隐式转换的特性，当最后执行时隐式转换，并计算最终的值返回
+        _adder.toString =  ()=> {
+            return _args.reduce(function (a, b) {
+                return a + b;
+            });
+        }
+
+        return _adder;
+    }
+    return adder.apply(null, _args);
+}
+```

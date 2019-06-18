@@ -1,10 +1,10 @@
 ---
 layout:     post
-title:      "Kotlin小知识点"
+title:      "Kotlin小知识点 - Delegation Pattern"
 subtitle:   ""
 date:       2019-01-23 12:00:00
 author:     "Undervoid"
-header-img: "img/kotlin.jpg"
+header-img: "img/kotlin.png"
 catalog: true
 tags:
     - 磨砻淬砺集
@@ -179,6 +179,7 @@ fun main(args: Array<String>) {
 }
 ```
 结果是
+
 ```
 vetoableData: 0 -> -1
 vetoableData = 0

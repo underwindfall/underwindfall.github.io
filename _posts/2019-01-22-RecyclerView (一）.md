@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "Android小知识点"
-subtitle:   ""
+title:      "Android 大话UI"
+subtitle:   "RecyclerView系列（一）"
 date:       2019-01-22 12:00:00
 author:     "Undervoid"
 header-img: "img/android-hint.jpg"
@@ -9,10 +9,12 @@ catalog: true
 tags:
     - 磨砻淬砺集
     - Android基础
+    - RecyclerView
 ---
 
 
-# Android小知识集合
+# Android RecyclerView总结  https://blog.piasy.com/2016/03/26/Insight-Android-RecyclerView-ItemDecoration/
+https://github.com/gejiaheng/Dividers-For-RecyclerView/blob/master/app/src/main/java/com/ge/demo/divider/decorator/InsetDivider.java
 
 > 总结一些 `Android` 方面的调用，会不断的持续更新这个文章
 

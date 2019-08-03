@@ -18,7 +18,9 @@ tags:
 
 ## Dagger
 
-1. Component 是连接 **@Inject** 所需要的变量和变量所需要的构造器之间的链接桥梁
+### Component 
+> 连接 **@Inject** 所需要的变量和变量所需要的构造器之间的链接桥梁
+
 ![Component](https://raw.githubusercontent.com/underwindfall/blogAssets/master/blog/dagger/component.png)
 - @BindsInstance
 这个是目前dagger中比较推荐使用的一种绑定**Component**的方法，他主要的作用是在定义了生成的**DaggerComponent**的*builder*
@@ -106,7 +108,8 @@ public abstract class TestModule1 {
 Optional<TestClass1> mTestClass1;
 ```
 
-2. Module
+
+###  Module
 ![Module](https://raw.githubusercontent.com/underwindfall/blogAssets/master/blog/kotlin/Module.png)
 
 可惜的是*@Inject*并非万能
@@ -119,19 +122,17 @@ Optional<TestClass1> mTestClass1;
 
 这几种情况就不能被使用，所以就有了 **@Provides @Module**的诞生，用来补充Module的不足。
 
-3. SubComponent vs Component dependencies
+###  SubComponent vs Component dependencies
 两者从功能行上来说都是想简化*Component*的使用，从而达到不用复写已有的注入来分享新的注入功能。
-```
-Component dependencies - Use this when you want to keep two components independent.
 
+>Component dependencies - Use this when you want to keep two components independent.
 SubComponents - Use this when you want to keep two components coupled.
-```
 
 和针筒抽取module很像，使用**dependencies**相当于使用针筒来抽取component。使用dependencies相当于把两个component进行组合，但是有一个指导性的原则：
 
 **被dependencies的component需要对外告知它能够提供的内容**
 
-4. Scope
+### Scope
 
 - @Qualifier @Named
 
@@ -180,8 +181,10 @@ Class A{
 
 Class B{}
 ```
+
 转化成被第三方容器提供对象,这里dagger会通过寻找**@Inject**对象，然后发现起构造函数，如果也含有**@Inject**就会生成
 相应Factory被注入
+
 ```kotlin
 Class A{
     @Inject

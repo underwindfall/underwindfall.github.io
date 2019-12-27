@@ -48,12 +48,6 @@
     * 个性化about 页面
     * 正式发布到站点
     
-### TodoList
--  [x]  添加评论功能
--  [x] 修改英文界面
--  [x] 完成对大博客的书写修改
--  [x] 404页面 腾讯公益项目
--  [x] 个性化about 页面
 
 ## License
 Licensed under the [MIT License](LICENSE)

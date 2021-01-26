@@ -18,14 +18,14 @@ header-img:  "img/about.jpg"
 
 --- 
 
+本来想写下很多东西，后来发现其实什么都不需要。
+很喜欢当年明月的在书里那句话，<br/><strong>成功只有一个 —— 按照自己的方式，去度过人生。</strong> 
 
-Well...This is a tough question.  
-My Name is Undervoidfall. You may find me in sites like zhihu.com /github/linkedin or just click this website <a href="http://qifanyang.com/resume/" style="color: #f5f5f5;background: #dd1144"><strong>[Resume]</strong></a> ,so on and so forth. It’s easy to know me. However, I don't have a deep insight into myself. This blog may help you and me to know me better.  
+不过我知道，连这件事很难做到。
 
-大学僧，程序猿。喜欢折腾的伪技术宅，想要学些设计，学学摄影。一点点 geek，一丢丢的执著，恰到好处就够。日常之中，多的是折腾劲，也希望能添几分专注、几许勇敢。 努力向上ing。这就是我。
+至少应该朝着这个方向努力吧。
 
-
-> Be the change you wish to see in the world.
+PS:可以通过这个<a href="http://qifanyang.com/resume/" ><strong>[Resume]</strong></a>自己空闲时间写的小网站联系我。
 
 
 
